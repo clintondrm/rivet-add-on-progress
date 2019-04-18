@@ -1,0 +1,108 @@
+// Rivet's Sass variables are available for you to use in your add-on's styles.
+// For a complete list of Rivet Sass variables, see the Rivet documentation:
+//
+// https://rivet.iu.edu/getting-started/sass/
+
+ @import "../../node_modules/rivet-uits/sass/core/variables";
+
+// Write your add-on's styles below.
+
+.rvt-process-steps {
+    display:flex;
+    list-style:none;
+
+    /* Show horizontal line only in default mode */
+    &:not(.rvt-process-steps--vertical){
+        li {
+            &:before {
+                content: "";
+                display:block;
+                width:100%;
+                box-shadow: 0 $md*2 0 $xxs/2 $color-black--300;
+                z-index:0;
+            }
+            &:last-child:before {
+                width:50%;
+            }
+            &:first-child:before {
+                position:absolute;
+                left:50%;
+            }
+        }
+    }
+    
+    li {
+        text-align:center;
+        flex-grow:1;
+        position:relative;
+
+        &.is-active {
+            .rvt-process-steps__indicator {
+                background: $color-blue;
+                color: $color-white;
+            }
+        }
+        
+        a {
+            text-decoration:none;
+            
+            .rvt-process-steps__label {
+                display:block;
+            }
+            .rvt-process-steps__indicator {
+                border: 3px solid $color-blue;
+                background-color: $color-white;
+                width: $lg;
+                height: $lg;
+                padding-top:$xxs/2;
+                border-radius:100px;
+                display:inline-block;
+                text-align:center;
+                text-decoration:none !important;
+                position:relative;
+                margin: $xs 0 $xs 0;
+                z-index:10;
+            }
+        }
+    }
+    li.is-active {
+        .rvt-process-steps__indicator {
+            background-color: $color-blue;
+            color: $color-white;
+        }
+    }
+}
+
+/* Vertical variant */
+.rvt-process-steps--vertical {
+    display:inline;
+
+    li{
+        text-align:left;
+        margin-bottom:0;
+        margin-top:0;
+
+        &:before {
+            content: "";
+            margin:0;
+            margin-left: $lg/2;
+            box-shadow: 0 0 0 2px $color-black--300;
+        }
+        &:first-child:before {
+            content: none;
+        }
+        a {
+            display:block;
+
+            .rvt-process-steps__label {
+                display:inline-block;
+            }
+            .rvt-process-steps__indicator {
+                position:relative;
+                display:inline-block;
+                margin: 0 $xs 0 0;
+
+            }
+        }
+    }
+}
