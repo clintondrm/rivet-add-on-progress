@@ -7,6 +7,9 @@
 
 // Write your add-on's styles below.
 
+// Colors
+@import "indicator-colors";
+
 .rvt-process-steps {
     display:flex;
     list-style:none;
@@ -29,6 +32,14 @@
                 left:50%;
             }
         }
+
+        &.rvt-process-steps--alternate:not(.rvt-process-steps--vertical){
+            li {
+                &:before {
+                    box-shadow: 0 $md 0 $xxs/2 $color-black--300;
+                }
+            }
+        }
     }
     
     li {
@@ -37,7 +48,14 @@
         position:relative;
 
         &.is-active {
-            .rvt-process-steps__indicator {
+            .rvt-process-steps__indicator,
+            .rvt-process-steps__indicator-secondary,
+            .rvt-process-steps__indicator--success,
+            .rvt-process-steps__indicator--warning,
+            .rvt-process-steps__indicator--danger,
+            .rvt-process-steps__indicator--success-secondary,
+            .rvt-process-steps__indicator--warning-secondary,
+            .rvt-process-steps__indicator--danger-secondary  {
                 background: $color-blue;
                 color: $color-white;
             }
@@ -45,29 +63,28 @@
         
         a {
             text-decoration:none;
-            
+            color: $color-black; 
+
             .rvt-process-steps__label {
                 display:block;
             }
-            .rvt-process-steps__indicator {
-                border: 3px solid $color-blue;
-                background-color: $color-white;
-                width: $lg;
-                height: $lg;
-                padding-top:$xxs/2;
-                border-radius:100px;
-                display:inline-block;
-                text-align:center;
-                text-decoration:none !important;
-                position:relative;
-                margin: $xs 0 $xs 0;
-                z-index:10;
-            }
+        }
+
+        svg {
+            margin:0 auto;
+            vertical-align:middle;
         }
     }
-    li.is-active {
-        .rvt-process-steps__indicator {
-            background-color: $color-blue;
+    &.is-active {
+        .rvt-process-steps__indicator,
+        .rvt-process-steps__indicator-secondary,
+        .rvt-process-steps__indicator--success,
+        .rvt-process-steps__indicator--warning,
+        .rvt-process-steps__indicator--danger,
+        .rvt-process-steps__indicator--success-secondary,
+        .rvt-process-steps__indicator--warning-secondary,
+        .rvt-process-steps__indicator--danger-secondary  {
+            background: $color-blue;
             color: $color-white;
         }
     }
@@ -93,15 +110,22 @@
         }
         a {
             display:block;
+            color: $color-black;
 
             .rvt-process-steps__label {
                 display:inline-block;
             }
-            .rvt-process-steps__indicator {
+            .rvt-process-steps__indicator,
+            .rvt-process-steps__indicator-secondary,
+            .rvt-process-steps__indicator--success,
+            .rvt-process-steps__indicator--warning,
+            .rvt-process-steps__indicator--danger,
+            .rvt-process-steps__indicator--success-secondary,
+            .rvt-process-steps__indicator--warning-secondary,
+            .rvt-process-steps__indicator--danger-secondary {
                 position:relative;
                 display:inline-block;
                 margin: 0 $xs 0 0;
-
             }
         }
     }
