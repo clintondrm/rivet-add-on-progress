@@ -1,0 +1,196 @@
+// Rivet's Sass variables are available for you to use in your add-on's styles.
+// For a complete list of Rivet Sass variables, see the Rivet documentation:
+//
+// https://rivet.iu.edu/getting-started/sass/
+
+ @import "../../node_modules/rivet-uits/sass/core/variables";
+ 
+/* stylelint-disable */
+%button-focus {
+  outline: none;
+  box-shadow: 0 0 0 $xxs/2 $color-white, 0 0 0 $xxs $color-blue--600;
+}
+
+.rvt-process-steps__indicator {
+  border: 2px solid $color-blue;
+  color: $color-blue;
+  background-color: $color-white;
+}
+
+.rvt-process-steps__indicator,
+.rvt-process-steps__indicator-secondary,
+.rvt-process-steps__indicator--success,
+.rvt-process-steps__indicator--warning,
+.rvt-process-steps__indicator--danger,
+.rvt-process-steps__indicator--success-secondary,
+.rvt-process-steps__indicator--warning-secondary,
+.rvt-process-steps__indicator--danger-secondary {
+  border: 2px solid $color-blue;
+  background-color: $color-white;
+  transition: box-shadow .2s ease;
+  width: $lg;
+  height: $lg;
+  padding-top:$xxs/2;
+  border-radius:100px;
+  display:inline-block;
+  text-align:center;
+  text-decoration:none !important;
+  position:relative;
+  margin: $xs 0 $xs 0;
+  z-index:10;
+
+  &.rvt-process-steps__indicator-secondary{
+    color: $color-blue;
+  }
+
+  &.rvt-process-steps__indicator--success,
+  &.rvt-process-steps__indicator--warning,
+  &.rvt-process-steps__indicator--danger{
+    color: $color-white;
+  }
+
+  &:focus,
+  &--focus {
+    @extend %button-focus;
+  }
+
+  &:hover,
+  &--hover {
+    background-color: $color-blue--700;
+    border-color: $color-blue--700;
+    color: $color-white;
+  }
+
+  &:active,
+  &--active {
+    background-color: $color-blue--800;
+    border-color: $color-blue--800;
+  }
+
+  &:disabled,
+  &:disabled:hover {
+    background-color: $color-black--100;
+    color: $color-black--700;
+    border-color: $color-black--400;
+    cursor: not-allowed;
+  }
+}
+
+.rvt-process-steps__indicator--secondary {
+  background-color: $color-white;
+  color: $color-blue--600;
+
+  &:focus,
+  &-focus {
+    @extend %button-focus;
+  }
+
+  &:hover,
+  &-hover {
+    background-color: $color-blue--100;
+    border-color: $color-blue--600;
+    color: $color-blue--800;
+  }
+
+  &:active,
+  &-active {
+    background-color: $color-blue--200;
+    color: $color-blue--800;
+  }
+}
+
+.rvt-process-steps__indicator--success {
+  background-color: $color-green--500;
+  border-color: $color-green--500;
+
+  &:focus,
+  &-focus {
+    @extend %button-focus;
+  }
+
+  &:hover,
+  &-hover {
+    background-color: $color-green--700;
+    border-color: $color-green--700;
+    color: $color-white;
+  }
+
+  &:active,
+  &-active {
+    background-color: $color-green--800;
+    border-color: $color-green--800;
+  }
+}
+
+.rvt-process-steps__indicator--success-secondary {
+  background-color: $color-white;
+  border-color: $color-green--500;
+  color: $color-green--500;
+
+  &:focus,
+  &-focus {
+    @extend %button-focus;
+  }
+
+  &:hover,
+  &-hover {
+    background-color: $color-green--050;
+    border-color: $color-green--500;
+    color: $color-green--700;
+  }
+
+  &:active,
+  &-active {
+    background-color: $color-green--100;
+    border-color: $color-green--500;
+    color: $color-green--800;
+  }
+}
+
+.rvt-process-steps__indicator--danger {
+  background-color: $color-orange--500;
+  border-color: $color-orange--500;
+
+  &:focus,
+  &-focus {
+    @extend %button-focus;
+  }
+
+  &:hover,
+  &-hover {
+    background-color: $color-orange--700;
+    border-color: $color-orange--700;
+    color: $color-white;
+  }
+
+  &:active,
+  &-active {
+    background-color: $color-orange--800;
+    border-color: $color-orange--800;
+  }
+}
+
+.rvt-process-steps__indicator--danger-secondary {
+  background-color: $color-white;
+  border-color: $color-orange--500;
+  color: $color-orange--500;
+
+  &:focus,
+  &-focus {
+    @extend %button-focus;
+  }
+
+  &:hover,
+  &-hover {
+    background-color: $color-orange--050;
+    border-color: $color-orange--500;
+    color: $color-orange--700;
+  }
+
+  &:active,
+  &-active {
+    background-color: $color-orange--100;
+    border-color: $color-orange--500;
+    color: $color-orange--800;
+  }
+}
