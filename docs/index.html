@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Process Step Indicator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://assets.uits.iu.edu/css/rivet/1.4.0/rivet.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/styles/github.min.css"
+    />
+    <link 
+      rel="stylesheet" 
+      href="./css/code-snippet-styling.css" 
+    />
+
+    <!--
+      Update the path below to your renamed CSS file, such as:
+
+      ./css/rivet-add-on-name.css
+    -->
+
+    <link rel="stylesheet" href="./css/process-step-indicator.css" />
+  </head>
+  <body>
+    <div
+      class="rvt-container rvt-container--center rvt-container--sophomore rvt-m-top-xxl rvt-m-bottom-xxl rvt-typeset"
+    >
+
+      <!--
+        Write your add-on documentation below.
+
+        Use the component documentation on the Rivet website as a guide for how
+        to write and structure your add-on documentation:
+
+        https://rivet.iu.edu/components/
+
+        For general tips on writing effective documentation, see the User
+        Experience Office website:
+
+        https://ux.iu.edu/writings/writing-effective-documentation/
+      -->
+      
+      <h1>Process Step Indicator</h1>
+      <p class="rvt-m-top-xxs rvt-m-bottom-xxl rvt-ts-20">
+        Displays each step in an ordered sequence of steps, indicating the current step and allowing users to jump to any step. Both horizontal and vertical variants available.
+      </p>
+
+      <!--
+        Your add-on documentation should include code samples that show how a
+        developer can use each variation of your new component.
+
+        Example code inside <pre> tags must be escaped. Escaping example code
+        by hand is a pain, so here's a website into which you can paste your
+        example code and get an escaped version back:
+
+        https://codebeautify.org/html-escape-unescape
+
+        The code examples below show how you might document the HTML and
+        JavaScript for a new button component that shows a message when clicked.
+      -->
+
+      <h2>Default (Horizontal) Configuration</h2>
+      <p>By default, items are shown horizontally. Be sure to allow enough room for the listed items on expected device and container widths.</p>
+      
+      <!-- HTML -->
+      <div class="rvt-example">
+        <div class="rvt-example__demo">
+          <ol class="rvt-process-steps">
+            <li class="rvt-process-steps__item">
+              <a href="#">
+                <span class="rvt-process-steps__label">Step 1</span>
+                <span class="rvt-process-steps__indicator">1</span>
+              </a>
+            </li>
+            <li class="rvt-process-steps__item is-active">
+              <a href="#">
+                <span class="rvt-process-steps__label">Step 2</span>
+                <span class="rvt-process-steps__indicator">2</span>
+              </a>
+            </li>
+            <li class="rvt-process-steps__item">
+              <a href="#">
+                <span class="rvt-process-steps__label">Step 3</span>
+                <span class="rvt-process-steps__indicator">3</span>
+              </a>
+            </li>
+          </ol>
+        </div>
+        <div class="rvt-example__code">
+          <pre><code class="html">&lt;ol class="rvt-process-steps"&gt;
+    &lt;li class="rvt-process-steps__item"&gt;
+        &lt;a href="#"&gt;
+            &lt;span class="rvt-process-steps__label"&gt;Step 1&lt;/span&gt;
+            &lt;span class="rvt-process-steps__indicator"&gt;1&lt;/span&gt;
+        &lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="rvt-process-steps__item is-active"&gt;
+        &lt;a href="#"&gt;
+            &lt;span class="rvt-process-steps__label"&gt;Step 2&lt;/span&gt;
+            &lt;span class="rvt-process-steps__indicator"&gt;2&lt;/span&gt;
+        &lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="rvt-process-steps__item"&gt;
+        &lt;a href="#"&gt;
+            &lt;span class="rvt-process-steps__label"&gt;Step 3&lt;/span&gt;
+            &lt;span class="rvt-process-steps__indicator"&gt;3&lt;/span&gt;
+        &lt;/a&gt;
+    &lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+        </div>
+      </div>
+
+      <h2>Vertical Configuration</h2>
+      <p>The vertical configuration can be used when less horizontal space is available.</p>
+      
+      <div class="rvt-example">
+        <div class="rvt-example__demo">
+          <ol class="rvt-process-steps rvt-process-steps--vertical">
+            <li class="rvt-process-steps__item">
+              <a href="#">
+                <span class="rvt-process-steps__indicator">1</span>
+                <span class="rvt-process-steps__label">Step 1</span>
+              </a>
+            </li>
+            <li class="rvt-process-steps__item is-active">
+              <a href="#">
+                <span class="rvt-process-steps__indicator">2</span>
+                <span class="rvt-process-steps__label">Step 2</span>
+              </a>
+            </li>
+            <li class="rvt-process-steps__item">
+              <a href="#">
+                <span class="rvt-process-steps__indicator">3</span>
+                <span class="rvt-process-steps__label">Step 3</span>
+              </a>
+            </li>
+          </ol>
+        </div>
+        <div class="rvt-example__code">
+          <pre><code class="html">&lt;ol class="rvt-process-steps rvt-process-steps--vertical"&gt;
+    &lt;li class="rvt-process-steps__item"&gt;
+        &lt;a href="#"&gt;
+            &lt;span class="rvt-process-steps__indicator"&gt;1&lt;/span&gt;
+            &lt;span class="rvt-process-steps__label"&gt;Step 1&lt;/span&gt;
+        &lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="rvt-process-steps__item is-active"&gt;
+        &lt;a href="#"&gt;
+            &lt;span class="rvt-process-steps__indicator"&gt;2&lt;/span&gt;
+            &lt;span class="rvt-process-steps__label"&gt;Step 2&lt;/span&gt;
+        &lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="rvt-process-steps__item"&gt;
+        &lt;a href="#"&gt;
+            &lt;span class="rvt-process-steps__indicator"&gt;3&lt;/span&gt;
+            &lt;span class="rvt-process-steps__label"&gt;Step 3&lt;/span&gt;
+        &lt;/a&gt;
+    &lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+        </div>
+      </div>
+
+      <h2>Use with SVG Icons</h2>
+      <p>Include inline SVG icons in the indicator span.</p>
+      
+      <!-- HTML -->
+      <div class="rvt-example">
+        <div class="rvt-example__demo">
+          <ol class="rvt-process-steps">
+            <li class="rvt-process-steps__item">
+              <a href="#">
+                <span class="rvt-process-steps__label">Step 1</span>
+                <span class="rvt-process-steps__indicator">
+                  <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                    <g fill="currentColor">
+                        <path d="M4,10.23H1.92V2H8V3h2V2A2,2,0,0,0,8,0H1.92a2,2,0,0,0-2,2v8.23a2,2,0,0,0,2,2H4Z"/>
+                        <path d="M14,16H8a2,2,0,0,1-2-2V7A2,2,0,0,1,8,5h6a2,2,0,0,1,2,2v7A2,2,0,0,1,14,16ZM8,7v7h6V7Z"/>
+                    </g>
+                  </svg>
+                </span>
+              </a>
+            </li>
+            <li class="rvt-process-steps__item is-active">
+              <a href="#">
+                <span class="rvt-process-steps__label">Step 2</span>
+                <span class="rvt-process-steps__indicator">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                    <path fill="currentColor" d="M12.9,6.6A1,1,0,0,0,12,6H8.6l2.3-4.6A1,1,0,0,0,10.5.1,1.1,1.1,0,0,0,9.2.4l-6,8a.9.9,0,0,0-.1,1A1,1,0,0,0,4,10H7.4L5.1,14.6a1,1,0,0,0,.4,1.3H6a.9.9,0,0,0,.8-.4l6-8A.9.9,0,0,0,12.9,6.6Z"/>
+                  </svg>
+              </a>
+            </li>
+            <li class="rvt-process-steps__item">
+              <a href="#">
+                <span class="rvt-process-steps__label">Step 3</span>
+                <span class="rvt-process-steps__indicator">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                      <title>Download</title>
+                      <g fill="currentColor">
+                          <path d="M14.25,11a1,1,0,0,0-1,1v1H2.75V12a1,1,0,0,0-2,0v1.75A1.25,1.25,0,0,0,2,15H14a1.25,1.25,0,0,0,1.25-1.25V12A1,1,0,0,0,14.25,11Z"/>
+                          <path d="M7.29,10.71a1,1,0,0,0,1.41,0l4-4a1,1,0,0,0-1.41-1.41L9,7.59V1A1,1,0,0,0,7,1V7.59L4.71,5.29A1,1,0,0,0,3.29,6.71Z"/>
+                      </g>
+                  </svg>
+                </span>
+              </a>
+            </li>
+          </ol>
+        </div>
+        <div class="rvt-example__code">
+          <pre><code class="html">&lt;ol class="rvt-process-steps"&gt;
+    &lt;li class="rvt-process-steps__item"&gt;
+        &lt;a href="#"&gt;
+        &lt;span class="rvt-process-steps__label"&gt;Step 1&lt;/span&gt;
+        &lt;span class="rvt-process-steps__indicator"&gt;
+            &lt;svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"&gt;
+            &lt;g fill="currentColor"&gt;
+                &lt;path d="M4,10.23H1.92V2H8V3h2V2A2,2,0,0,0,8,0H1.92a2,2,0,0,0-2,2v8.23a2,2,0,0,0,2,2H4Z"/&gt;
+                &lt;path d="M14,16H8a2,2,0,0,1-2-2V7A2,2,0,0,1,8,5h6a2,2,0,0,1,2,2v7A2,2,0,0,1,14,16ZM8,7v7h6V7Z"/&gt;
+            &lt;/g&gt;
+            &lt;/svg&gt;
+        &lt;/span&gt;
+        &lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="rvt-process-steps__item is-active"&gt;
+        &lt;a href="#"&gt;
+        &lt;span class="rvt-process-steps__label"&gt;Step 2&lt;/span&gt;
+        &lt;span class="rvt-process-steps__indicator"&gt;
+            &lt;svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"&gt;
+            &lt;path fill="currentColor" d="M12.9,6.6A1,1,0,0,0,12,6H8.6l2.3-4.6A1,1,0,0,0,10.5.1,1.1,1.1,0,0,0,9.2.4l-6,8a.9.9,0,0,0-.1,1A1,1,0,0,0,4,10H7.4L5.1,14.6a1,1,0,0,0,.4,1.3H6a.9.9,0,0,0,.8-.4l6-8A.9.9,0,0,0,12.9,6.6Z"/&gt;
+            &lt;/svg&gt;
+        &lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="rvt-process-steps__item"&gt;
+        &lt;a href="#"&gt;
+        &lt;span class="rvt-process-steps__label"&gt;Step 3&lt;/span&gt;
+        &lt;span class="rvt-process-steps__indicator"&gt;
+            &lt;svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"&gt;
+                &lt;title&gt;Download&lt;/title&gt;
+                &lt;g fill="currentColor"&gt;
+                    &lt;path d="M14.25,11a1,1,0,0,0-1,1v1H2.75V12a1,1,0,0,0-2,0v1.75A1.25,1.25,0,0,0,2,15H14a1.25,1.25,0,0,0,1.25-1.25V12A1,1,0,0,0,14.25,11Z"/&gt;
+                    &lt;path d="M7.29,10.71a1,1,0,0,0,1.41,0l4-4a1,1,0,0,0-1.41-1.41L9,7.59V1A1,1,0,0,0,7,1V7.59L4.71,5.29A1,1,0,0,0,3.29,6.71Z"/&gt;
+                &lt;/g&gt;
+            &lt;/svg&gt;
+        &lt;/span&gt;
+        &lt;/a&gt;
+    &lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+        </div>
+      </div>
+
+      <h2>Alternate Label Placement Option</h2>
+      <p>To place labels above indicators, use the --alternate modifier</p>
+
+      <div class="rvt-example">
+        <div class="rvt-example__demo">
+          <ol class="rvt-process-steps rvt-process-steps--alternate">
+            <li class="rvt-process-steps__item">
+              <a href="#">
+                <span class="rvt-process-steps__indicator">1</span>
+                <span class="rvt-process-steps__label">Step 1</span>
+              </a>
+            </li>
+            <li class="rvt-process-steps__item is-active">
+              <a href="#">
+                <span class="rvt-process-steps__indicator">2</span>
+                <span class="rvt-process-steps__label">Step 2</span>
+              </a>
+            </li>
+            <li class="rvt-process-steps__item">
+              <a href="#">
+                <span class="rvt-process-steps__indicator">3</span>
+                <span class="rvt-process-steps__label">Step 3</span>
+              </a>
+            </li>
+          </ol>
+        </div>
+        <div class="rvt-example__code">
+          <pre><code class="html">&lt;ol class="rvt-process-steps rvt-process-steps--alternate"&gt;
+    ...
+&lt;/ol&gt;</code></pre>
+        </div>
+      </div>
+
+      <h2>Optional Color Settings</h2>
+      <p>Use modifiers like --danger, --warning-secondary, and -secondary to change the styles for individual indicators.</p>
+      
+      <!-- HTML -->
+      <div class="rvt-example">
+        <div class="rvt-example__demo">
+          <ol class="rvt-process-steps">
+            <li class="rvt-process-steps__item">
+              <a href="#">
+                <span class="rvt-process-steps__label">Step 1</span>
+                <span class="rvt-process-steps__indicator--danger-secondary">1</span>
+              </a>
+            </li>
+            <li class="rvt-process-steps__item">
+              <a href="#">
+                <span class="rvt-process-steps__label">Step 2</span>
+                <span class="rvt-process-steps__indicator--success">2</span>
+              </a>
+            </li>
+            <li class="rvt-process-steps__item">
+              <a href="#">
+                <span class="rvt-process-steps__label">Step 3</span>
+                <span class="rvt-process-steps__indicator-secondary">3</span>
+              </a>
+            </li>
+          </ol>
+        </div>
+        <div class="rvt-example__code">
+          <pre><code class="html">&lt;ol class="rvt-process-steps"&gt;
+    &lt;li class="rvt-process-steps__item"&gt;
+        &lt;a href="#"&gt;
+            &lt;span class="rvt-process-steps__label"&gt;Step 1&lt;/span&gt;
+            &lt;span class="rvt-process-steps__indicator--danger-secondary"&gt;1&lt;/span&gt;
+        &lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="rvt-process-steps__item"&gt;
+        &lt;a href="#"&gt;
+            &lt;span class="rvt-process-steps__label"&gt;Step 2&lt;/span&gt;
+            &lt;span class="rvt-process-steps__indicator--success"&gt;2&lt;/span&gt;
+        &lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="rvt-process-steps__item"&gt;
+        &lt;a href="#"&gt;
+            &lt;span class="rvt-process-steps__label"&gt;Step 3&lt;/span&gt;
+            &lt;span class="rvt-process-steps__indicator-secondary"&gt;3&lt;/span&gt;
+        &lt;/a&gt;
+    &lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+        </div>
+      </div>
+
+      <!--
+        Your add-on documentation should let developers know what use cases
+        your new component is intended for.
+
+        Example: https://rivet.iu.edu/components/page-content/badges/#when-to-use
+      -->
+
+      <h2>When to use</h2>
+      <ul>
+        <li>To communicate how many steps there are in a structured process</li>
+        <li>To communicate completion of required steps in a structured process</li>
+      </ul>
+
+      <!--
+        Your add-on documentation should also let developers know what use
+        cases might call for a different component than the one you've built.
+
+        Example: https://rivet.iu.edu/components/page-content/badges/#when-to-consider-something-else
+      -->
+
+      <h2>When to consider something else</h2>
+      <ul>
+        <li>For general navigation, use a dedicated nav element</li>
+        <li>Navigation for situations when users do not need to complete all steps of a process</li>
+        <li>For normal lists, use ordered lists or unordered lists.</li>
+      </ul>
+
+      <!--
+        Your add-on documentation should let developers know if there's
+        anything they need to keep in mind in order for your component to
+        be accessible.
+
+        Example: https://rivet.iu.edu/components/page-content/badges/#accessibility
+      -->
+
+      <h2>Accessibility</h2>
+      <p>Relies on standard interactive element (anchor tags) to enable keyboard-only navigation. Accessible implementation will require the use of descriptive labels within the anchor tags.</p>
+
+      <!--
+        Your add-on documentation should let developers know if there's
+        anything they need to keep in mind or be careful of when implementing
+        your add-on, including additional options or notes about handling
+        corner cases.
+
+        Example: https://rivet.iu.edu/components/navigation/dropdown/#implementation-notes
+      -->
+
+      <h2>Implementation notes</h2>
+      <p>None.</p>
+
+    <script>
+
+      // Initializes syntax highlighting for your code examples.
+      hljs.initHighlightingOnLoad();
+
+      // If your add-on requires JavaScript, do any initialization here.
+      const component = new MyComponent('.rvt-button--fancy');
+      component.init();
+
+    </script>
+  </body>
+</html>

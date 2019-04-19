@@ -1,0 +1,343 @@
+/* stylelint-disable */
+.rvt-process-steps__indicator:focus, .rvt-process-steps__indicator--focus,
+.rvt-process-steps__indicator-secondary:focus,
+.rvt-process-steps__indicator-secondary--focus,
+.rvt-process-steps__indicator--success:focus,
+.rvt-process-steps__indicator--success--focus,
+.rvt-process-steps__indicator--warning:focus,
+.rvt-process-steps__indicator--warning--focus,
+.rvt-process-steps__indicator--danger:focus,
+.rvt-process-steps__indicator--danger--focus,
+.rvt-process-steps__indicator--success-secondary:focus,
+.rvt-process-steps__indicator--success-secondary--focus,
+.rvt-process-steps__indicator--warning-secondary:focus,
+.rvt-process-steps__indicator--warning-secondary--focus,
+.rvt-process-steps__indicator--danger-secondary:focus,
+.rvt-process-steps__indicator--danger-secondary--focus, .rvt-process-steps__indicator--secondary:focus, .rvt-process-steps__indicator--secondary-focus, .rvt-process-steps__indicator--success-focus, .rvt-process-steps__indicator--success-secondary-focus, .rvt-process-steps__indicator--danger-focus, .rvt-process-steps__indicator--danger-secondary-focus {
+  outline: none;
+  box-shadow: 0 0 0 0.125rem #ffffff, 0 0 0 0.25rem #006298;
+}
+
+.rvt-process-steps__indicator {
+  border: 2px solid #006298;
+  color: #006298;
+  background-color: #ffffff;
+}
+
+.rvt-process-steps__indicator,
+.rvt-process-steps__indicator-secondary,
+.rvt-process-steps__indicator--success,
+.rvt-process-steps__indicator--warning,
+.rvt-process-steps__indicator--danger,
+.rvt-process-steps__indicator--success-secondary,
+.rvt-process-steps__indicator--warning-secondary,
+.rvt-process-steps__indicator--danger-secondary {
+  border: 2px solid #006298;
+  background-color: #ffffff;
+  transition: box-shadow .2s ease;
+  width: 2rem;
+  height: 2rem;
+  padding-top: 0.125rem;
+  border-radius: 100px;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none !important;
+  position: relative;
+  margin: 0.5rem 0 0.5rem 0;
+  z-index: 10;
+}
+
+.rvt-process-steps__indicator.rvt-process-steps__indicator-secondary,
+.rvt-process-steps__indicator-secondary.rvt-process-steps__indicator-secondary,
+.rvt-process-steps__indicator--success.rvt-process-steps__indicator-secondary,
+.rvt-process-steps__indicator--warning.rvt-process-steps__indicator-secondary,
+.rvt-process-steps__indicator--danger.rvt-process-steps__indicator-secondary,
+.rvt-process-steps__indicator--success-secondary.rvt-process-steps__indicator-secondary,
+.rvt-process-steps__indicator--warning-secondary.rvt-process-steps__indicator-secondary,
+.rvt-process-steps__indicator--danger-secondary.rvt-process-steps__indicator-secondary {
+  color: #006298;
+}
+
+.rvt-process-steps__indicator.rvt-process-steps__indicator--success, .rvt-process-steps__indicator.rvt-process-steps__indicator--warning, .rvt-process-steps__indicator.rvt-process-steps__indicator--danger,
+.rvt-process-steps__indicator-secondary.rvt-process-steps__indicator--success,
+.rvt-process-steps__indicator-secondary.rvt-process-steps__indicator--warning,
+.rvt-process-steps__indicator-secondary.rvt-process-steps__indicator--danger,
+.rvt-process-steps__indicator--success.rvt-process-steps__indicator--success,
+.rvt-process-steps__indicator--success.rvt-process-steps__indicator--warning,
+.rvt-process-steps__indicator--success.rvt-process-steps__indicator--danger,
+.rvt-process-steps__indicator--warning.rvt-process-steps__indicator--success,
+.rvt-process-steps__indicator--warning.rvt-process-steps__indicator--warning,
+.rvt-process-steps__indicator--warning.rvt-process-steps__indicator--danger,
+.rvt-process-steps__indicator--danger.rvt-process-steps__indicator--success,
+.rvt-process-steps__indicator--danger.rvt-process-steps__indicator--warning,
+.rvt-process-steps__indicator--danger.rvt-process-steps__indicator--danger,
+.rvt-process-steps__indicator--success-secondary.rvt-process-steps__indicator--success,
+.rvt-process-steps__indicator--success-secondary.rvt-process-steps__indicator--warning,
+.rvt-process-steps__indicator--success-secondary.rvt-process-steps__indicator--danger,
+.rvt-process-steps__indicator--warning-secondary.rvt-process-steps__indicator--success,
+.rvt-process-steps__indicator--warning-secondary.rvt-process-steps__indicator--warning,
+.rvt-process-steps__indicator--warning-secondary.rvt-process-steps__indicator--danger,
+.rvt-process-steps__indicator--danger-secondary.rvt-process-steps__indicator--success,
+.rvt-process-steps__indicator--danger-secondary.rvt-process-steps__indicator--warning,
+.rvt-process-steps__indicator--danger-secondary.rvt-process-steps__indicator--danger {
+  color: #ffffff;
+}
+
+.rvt-process-steps__indicator:hover, .rvt-process-steps__indicator--hover,
+.rvt-process-steps__indicator-secondary:hover,
+.rvt-process-steps__indicator-secondary--hover,
+.rvt-process-steps__indicator--success:hover,
+.rvt-process-steps__indicator--success--hover,
+.rvt-process-steps__indicator--warning:hover,
+.rvt-process-steps__indicator--warning--hover,
+.rvt-process-steps__indicator--danger:hover,
+.rvt-process-steps__indicator--danger--hover,
+.rvt-process-steps__indicator--success-secondary:hover,
+.rvt-process-steps__indicator--success-secondary--hover,
+.rvt-process-steps__indicator--warning-secondary:hover,
+.rvt-process-steps__indicator--warning-secondary--hover,
+.rvt-process-steps__indicator--danger-secondary:hover,
+.rvt-process-steps__indicator--danger-secondary--hover {
+  background-color: #134a71;
+  border-color: #134a71;
+  color: #ffffff;
+}
+
+.rvt-process-steps__indicator:active, .rvt-process-steps__indicator--active,
+.rvt-process-steps__indicator-secondary:active,
+.rvt-process-steps__indicator-secondary--active,
+.rvt-process-steps__indicator--success:active,
+.rvt-process-steps__indicator--success--active,
+.rvt-process-steps__indicator--warning:active,
+.rvt-process-steps__indicator--warning--active,
+.rvt-process-steps__indicator--danger:active,
+.rvt-process-steps__indicator--danger--active,
+.rvt-process-steps__indicator--success-secondary:active,
+.rvt-process-steps__indicator--success-secondary--active,
+.rvt-process-steps__indicator--warning-secondary:active,
+.rvt-process-steps__indicator--warning-secondary--active,
+.rvt-process-steps__indicator--danger-secondary:active,
+.rvt-process-steps__indicator--danger-secondary--active {
+  background-color: #16324b;
+  border-color: #16324b;
+}
+
+.rvt-process-steps__indicator:disabled, .rvt-process-steps__indicator:disabled:hover,
+.rvt-process-steps__indicator-secondary:disabled,
+.rvt-process-steps__indicator-secondary:disabled:hover,
+.rvt-process-steps__indicator--success:disabled,
+.rvt-process-steps__indicator--success:disabled:hover,
+.rvt-process-steps__indicator--warning:disabled,
+.rvt-process-steps__indicator--warning:disabled:hover,
+.rvt-process-steps__indicator--danger:disabled,
+.rvt-process-steps__indicator--danger:disabled:hover,
+.rvt-process-steps__indicator--success-secondary:disabled,
+.rvt-process-steps__indicator--success-secondary:disabled:hover,
+.rvt-process-steps__indicator--warning-secondary:disabled,
+.rvt-process-steps__indicator--warning-secondary:disabled:hover,
+.rvt-process-steps__indicator--danger-secondary:disabled,
+.rvt-process-steps__indicator--danger-secondary:disabled:hover {
+  background-color: #eeeeee;
+  color: #666666;
+  border-color: #aaaaaa;
+  cursor: not-allowed;
+}
+
+.rvt-process-steps__indicator--secondary {
+  background-color: #ffffff;
+  color: #006298;
+}
+
+.rvt-process-steps__indicator--secondary:hover, .rvt-process-steps__indicator--secondary-hover {
+  background-color: #dce3ee;
+  border-color: #006298;
+  color: #16324b;
+}
+
+.rvt-process-steps__indicator--secondary:active, .rvt-process-steps__indicator--secondary-active {
+  background-color: #b8c8dc;
+  color: #16324b;
+}
+
+.rvt-process-steps__indicator--success {
+  background-color: #008a28;
+  border-color: #008a28;
+}
+
+.rvt-process-steps__indicator--success:hover, .rvt-process-steps__indicator--success-hover {
+  background-color: #16521d;
+  border-color: #16521d;
+  color: #ffffff;
+}
+
+.rvt-process-steps__indicator--success:active, .rvt-process-steps__indicator--success-active {
+  background-color: #153717;
+  border-color: #153717;
+}
+
+.rvt-process-steps__indicator--success-secondary {
+  background-color: #ffffff;
+  border-color: #008a28;
+  color: #008a28;
+}
+
+.rvt-process-steps__indicator--success-secondary:hover, .rvt-process-steps__indicator--success-secondary-hover {
+  background-color: #eaf3e8;
+  border-color: #008a28;
+  color: #16521d;
+}
+
+.rvt-process-steps__indicator--success-secondary:active, .rvt-process-steps__indicator--success-secondary-active {
+  background-color: #d4e8d2;
+  border-color: #008a28;
+  color: #153717;
+}
+
+.rvt-process-steps__indicator--danger {
+  background-color: #df3603;
+  border-color: #df3603;
+}
+
+.rvt-process-steps__indicator--danger:hover, .rvt-process-steps__indicator--danger-hover {
+  background-color: #82270d;
+  border-color: #82270d;
+  color: #ffffff;
+}
+
+.rvt-process-steps__indicator--danger:active, .rvt-process-steps__indicator--danger-active {
+  background-color: #571e0c;
+  border-color: #571e0c;
+}
+
+.rvt-process-steps__indicator--danger-secondary {
+  background-color: #ffffff;
+  border-color: #df3603;
+  color: #df3603;
+}
+
+.rvt-process-steps__indicator--danger-secondary:hover, .rvt-process-steps__indicator--danger-secondary-hover {
+  background-color: #ffece5;
+  border-color: #df3603;
+  color: #82270d;
+}
+
+.rvt-process-steps__indicator--danger-secondary:active, .rvt-process-steps__indicator--danger-secondary-active {
+  background-color: #ffd9cc;
+  border-color: #df3603;
+  color: #571e0c;
+}
+
+.rvt-process-steps {
+  display: flex;
+  list-style: none;
+  /* Show horizontal line only in default mode */
+}
+
+.rvt-process-steps:not(.rvt-process-steps--vertical) li:before {
+  content: "";
+  display: block;
+  width: 100%;
+  box-shadow: 0 3rem 0 0.125rem #cccccc;
+  z-index: 0;
+}
+
+.rvt-process-steps:not(.rvt-process-steps--vertical) li:last-child:before {
+  width: 50%;
+}
+
+.rvt-process-steps:not(.rvt-process-steps--vertical) li:first-child:before {
+  position: absolute;
+  left: 50%;
+}
+
+.rvt-process-steps:not(.rvt-process-steps--vertical).rvt-process-steps--alternate:not(.rvt-process-steps--vertical) li:before {
+  box-shadow: 0 1.5rem 0 0.125rem #cccccc;
+}
+
+.rvt-process-steps li {
+  text-align: center;
+  flex-grow: 1;
+  position: relative;
+}
+
+.rvt-process-steps li.is-active .rvt-process-steps__indicator,
+.rvt-process-steps li.is-active .rvt-process-steps__indicator-secondary,
+.rvt-process-steps li.is-active .rvt-process-steps__indicator--success,
+.rvt-process-steps li.is-active .rvt-process-steps__indicator--warning,
+.rvt-process-steps li.is-active .rvt-process-steps__indicator--danger,
+.rvt-process-steps li.is-active .rvt-process-steps__indicator--success-secondary,
+.rvt-process-steps li.is-active .rvt-process-steps__indicator--warning-secondary,
+.rvt-process-steps li.is-active .rvt-process-steps__indicator--danger-secondary {
+  background: #006298;
+  color: #ffffff;
+}
+
+.rvt-process-steps li a {
+  text-decoration: none;
+  color: #333333;
+}
+
+.rvt-process-steps li a .rvt-process-steps__label {
+  display: block;
+}
+
+.rvt-process-steps li svg {
+  margin: 0 auto;
+  vertical-align: middle;
+}
+
+.rvt-process-steps.is-active .rvt-process-steps__indicator,
+.rvt-process-steps.is-active .rvt-process-steps__indicator-secondary,
+.rvt-process-steps.is-active .rvt-process-steps__indicator--success,
+.rvt-process-steps.is-active .rvt-process-steps__indicator--warning,
+.rvt-process-steps.is-active .rvt-process-steps__indicator--danger,
+.rvt-process-steps.is-active .rvt-process-steps__indicator--success-secondary,
+.rvt-process-steps.is-active .rvt-process-steps__indicator--warning-secondary,
+.rvt-process-steps.is-active .rvt-process-steps__indicator--danger-secondary {
+  background: #006298;
+  color: #ffffff;
+}
+
+/* Vertical variant */
+.rvt-process-steps--vertical {
+  display: inline;
+}
+
+.rvt-process-steps--vertical li {
+  text-align: left;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.rvt-process-steps--vertical li:before {
+  content: "";
+  margin: 0;
+  margin-left: 1rem;
+  box-shadow: 0 0 0 2px #cccccc;
+}
+
+.rvt-process-steps--vertical li:first-child:before {
+  content: none;
+}
+
+.rvt-process-steps--vertical li a {
+  display: block;
+  color: #333333;
+}
+
+.rvt-process-steps--vertical li a .rvt-process-steps__label {
+  display: inline-block;
+}
+
+.rvt-process-steps--vertical li a .rvt-process-steps__indicator,
+.rvt-process-steps--vertical li a .rvt-process-steps__indicator-secondary,
+.rvt-process-steps--vertical li a .rvt-process-steps__indicator--success,
+.rvt-process-steps--vertical li a .rvt-process-steps__indicator--warning,
+.rvt-process-steps--vertical li a .rvt-process-steps__indicator--danger,
+.rvt-process-steps--vertical li a .rvt-process-steps__indicator--success-secondary,
+.rvt-process-steps--vertical li a .rvt-process-steps__indicator--warning-secondary,
+.rvt-process-steps--vertical li a .rvt-process-steps__indicator--danger-secondary {
+  position: relative;
+  display: inline-block;
+  margin: 0 0.5rem 0 0;
+}
